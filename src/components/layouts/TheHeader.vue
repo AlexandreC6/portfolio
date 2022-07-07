@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="logo-socials">
-    <p><font-awesome-icon icon="fa-brands fa-github" /></p>
+    <p>socials</p>
   </div>
 </template>
 
