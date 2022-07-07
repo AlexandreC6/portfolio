@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Menu Hamburger</h1>
+    <i class="fa-solid fa-bars"></i>
   </div>
 </template>
 
@@ -10,6 +10,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.fa-bars {
+  position: absolute;
+  right: 9.788vw;
+  top: 2.579vw;
+  font-size: 30px;
 
+}
 </style>
