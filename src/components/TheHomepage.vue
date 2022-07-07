@@ -5,6 +5,7 @@
     <p class="line2">Alexandre Camilo</p>
     <p class="line3">Fullstack developer</p>
   </section>
+  <!-- <base-arrow>About me</base-arrow> -->
 </div>
 </template>
 
@@ -20,7 +21,7 @@ export default {
 }
 
 .title{
-  font-family: 'Cinzel';
+  font-family: 'Cinzel', sans-serif;
   font-weight: 400;
   font-size: 4.125rem;
 }
