@@ -3,19 +3,29 @@
     <div class="logo">
       alex.camilo
     </div>
+    <menu-hamburger></menu-hamburger>
   </div>
   <div class="logo-socials">
-    <p>socials</p>
+    <ul>
+      <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+    </ul>
   </div>
 </template>
 
 <script>
+import MenuHamburger from '@/pages/MenuHamburger.vue';
+
 export default {
+  components: {
+    MenuHamburger
+  }
 
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 .sticky{
   position: sticky;
   top: 0;
@@ -30,6 +40,27 @@ export default {
   left: 8.862vw;
   top: 2.579vw;
   text-transform: uppercase;
+}
+
+.logo-socials {
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 2.579vw;
+    position: absolute;
+    top: 2.579vw;
+    left: 44.444vw;
+
+  }
+
+  li {
+    list-style: none;
+    font-size: 30px;
+
+    a{
+      color: #000;
+    }
+  }
 }
 
 </style>
