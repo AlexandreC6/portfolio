@@ -5,12 +5,7 @@
     </div>
   </div>
   <div class="logo-socials">
-    <p>socials</p>
-    <!-- <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul> -->
+    <p><font-awesome-icon icon="fa-brands fa-github" /></p>
   </div>
 </template>
 
