@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>About me</h1>
+  <div class="about-me">
+    <base-card></base-card>
   </div>
 </template>
 
@@ -11,5 +11,9 @@ export default {
 </script>
 
 <style>
-
+.about-me {
+  height: 80vh;
+  width: 100%;
+  border: 1px solid red;
+}
 </style>

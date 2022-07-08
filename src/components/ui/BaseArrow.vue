@@ -1,14 +1,12 @@
 <template>
-  <div class="place">
+  <div class="all-arrow">
+    <p><slot></slot></p>
     <a class="link" href="#">
       <span class="link__arrow">
         <span></span>
         <span></span>
       </span>
       <span class="link__line"></span>
-      <span class="link__text">
-        <slot></slot>
-      </span>
     </a>
   </div>
 </template>
@@ -20,19 +18,30 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.place {
-  height: 100%;
+.all-arrow{
+  // display: flex;
+  // justify-content: center;
   position: absolute;
-  bottom: 0;
-}
+  bottom: 15%;
+  right: 50%;
+  transform: translate(50%, 50%);
 
+  p {
+    font-family: 'Cinzel', sans-serif;
+    color: #4A4A4A;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+}
 .link {
   $self: &;
   display: inline-flex;
   align-items: center;
-  padding: 5px;
   text-decoration: none;
-  transform: rotate(-90deg) translate3d(-300px, 0, 0);
+  transform: rotate(-90deg);
 
   &__arrow {
     display: inline-flex;
@@ -57,83 +66,33 @@ export default {
       }
 
       &:after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         left: 0;
         width: 0;
         height: 2px;
-        background: #0F4C81;
       }
     }
   }
-
   &__line {
     position: relative;
     margin-left: -14px;
     margin-right: 30px;
-    width: 150px;
+    width: 40px;
     height: 2px;
     background: #BEBDBE;
     overflow: hidden;
     z-index: 1;
 
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 80px;
       width: 70px;
       height: 2px;
-      background: #0F4C81;
     }
-  }
-
-  &__text {
-    color: #4A4A4A;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-  }
-
-  &:hover {
-    #{$self} {
-      &__line {
-        &:after {
-          animation: animation-line 1.5s forwards;
-        }
-      }
-
-      &__arrow {
-        span {
-          &:after {
-            animation: animation-arrow 1.5s forwards;
-            animation-delay: 1s;
-          }
-        }
-      }
-    }
-  }
-}
-
-
-@keyframes animation-line {
-  0% {
-    left: 80px;
-  }
-
-  100% {
-    left: 0;
-  }
-}
-
-@keyframes animation-arrow {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
   }
 }
 </style>

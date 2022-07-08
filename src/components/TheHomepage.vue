@@ -5,7 +5,7 @@
     <p class="line2">Alexandre Camilo</p>
     <p class="line3">Fullstack developer</p>
   </section>
-  <!-- <base-arrow>About me</base-arrow> -->
+  <base-arrow>About me</base-arrow>
 </div>
 </template>
 

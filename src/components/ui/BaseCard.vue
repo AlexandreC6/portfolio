@@ -1,0 +1,36 @@
+<template>
+  <div class="container">
+    <div class="contain">
+      <p>I’m Alexandre Camilo. I’m 24 years old. I’m a web developer with <spand class="blue-tech">Ruby on Rails</spand> and <span class="blue-tech">VueJs</span>.</p>
+      <br>
+      <p>i’m passionate about everything that has to do with digital design.</p>
+    </div>
+    <div class="picture">
+    </div>
+  </div>
+</template>
+
+<style scoped lang="scss">
+.container {
+  border: 1px solid green;
+  margin: 0 238px;
+}
+
+.contain {
+  border: 1px solid blue;
+  width: 47.619vw;
+
+  p {
+    font-size: 32px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 27px;
+
+    .blue-tech {
+      color: #0F4C81;
+    }
+  }
+}
+</style>
