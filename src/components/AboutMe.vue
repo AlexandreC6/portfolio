@@ -1,8 +1,7 @@
 <template>
   <div class="about-me">
     <base-card></base-card>
-    <base-logo>
-    </base-logo>
+    <!-- <base-logo></base-logo> -->
   </div>
 </template>
 

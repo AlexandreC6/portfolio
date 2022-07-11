@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="contain">
+    <div class="my-description">
       <p>I’m Alexandre Camilo.
       I’m a web developer with <spand class="blue-tech">Ruby on Rails</spand> and <span class="blue-tech">VueJs</span>.</p>
       <br>
@@ -25,18 +25,18 @@ export default {
 
 <style scoped lang="scss">
 .container {
-  width: 100%;
+  width: 68.45vw;
   margin: 0 15vw;
   // width: 68.452vw;
   // height: 13.558vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 187px;
   grid-template-rows: 1fr;
-  grid-column-gap: 100px;
+  grid-column-gap: 8.59vw;
   grid-row-gap: 0px;
 }
 
-.contain {
+.my-description {
   // width: 47.619vw;
   // height: 100%;
   grid-area: 1 / 1 / 2 / 2;
