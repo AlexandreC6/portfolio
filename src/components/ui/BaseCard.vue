@@ -7,7 +7,7 @@
       <p>i’m passionate about everything that has to do with digital design.</p>
     </div>
     <div class="picture">
-      <img src="../../assets/profile-picture.png" alt="">
+      <img src="../../assets/profile-picture_removebg.png" alt="">
     </div>
   </div>
 </template>
