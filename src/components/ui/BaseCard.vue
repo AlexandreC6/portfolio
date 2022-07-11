@@ -1,30 +1,43 @@
 <template>
   <div class="container">
     <div class="contain">
-      <p>I’m Alexandre Camilo. I’m 24 years old. I’m a web developer with <spand class="blue-tech">Ruby on Rails</spand> and <span class="blue-tech">VueJs</span>.</p>
+      <p>I’m Alexandre Camilo.
+      I’m a web developer with <spand class="blue-tech">Ruby on Rails</spand> and <span class="blue-tech">VueJs</span>.</p>
       <br>
       <p>i’m passionate about everything that has to do with digital design.</p>
     </div>
     <div class="picture">
-      <slot></slot>
+      <img src="../../assets/profile-picture.png" alt="">
     </div>
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      speech: ''
+    }
+  },
+}
+</script>
+
+
 <style scoped lang="scss">
 .container {
-  margin: 0 238px;
+  width: 100%;
+  margin: 0 15vw;
   // width: 68.452vw;
   // height: 13.558vw;
   display: grid;
-  grid-template-columns: 720px 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
+  grid-column-gap: 100px;
   grid-row-gap: 0px;
 }
 
 .contain {
-  width: 47.619vw;
+  // width: 47.619vw;
   // height: 100%;
   grid-area: 1 / 1 / 2 / 2;
 
@@ -42,9 +55,9 @@
   }
 }
 .picture {
-  width: 100%;
-  height: 100%;
   grid-area: 1 / 2 / 2 / 3;
-  background: red;
+    img {
+      height: 185px;
+    }
 }
 </style>

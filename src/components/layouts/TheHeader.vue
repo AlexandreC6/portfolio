@@ -35,10 +35,10 @@ export default {
   font-weight: 700;
   font-size: 23px;
   color: #0F4C81;
-
   position: absolute;
-  left: 8.862vw;
   top: 2.579vw;
+  left: 8.862vw;
+  // margin: 2.579vw 0 0 8.862vw;
   text-transform: uppercase;
 }
 

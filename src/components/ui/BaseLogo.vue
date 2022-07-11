@@ -1,48 +1,62 @@
 <template>
+<div class="line-logo"></div>
   <div class="all-logo">
     <div class="logo1">
+      <Icon icon="cib:ruby" color="black" class="icon-tech" />
     </div>
     <div class="logo2">
-
+      <Icon icon="mdi:language-ruby-on-rails" color="black" class="icon-tech" />
     </div>
     <div class="logo3">
-
+      <Icon icon="akar-icons:vue-fill" color="black" class="icon-tech" />
     </div>
     <div class="logo4">
-
+      <Icon icon="cib:js" color="black" class="icon-tech" />
     </div>
     <div class="logo5">
-
+      <Icon icon="akar-icons:html-fill" color="black" class="icon-tech" />
     </div>
     <div class="logo6">
-      <i class="fa-brands fa-css3-alt icon"></i>
+      <Icon icon="akar-icons:css-fill" color="black" class="icon-tech" />
     </div>
     <div class="logo7">
-
+      <Icon icon="cib:mysql" color="black" class="icon-tech sql" />
     </div>
     <div class="logo8">
-
+      <Icon icon="bi:git" color="black" class="icon-tech" />
     </div>
     <div class="logo9">
-
+      <Icon icon="bxl:heroku" color="black" class="icon-tech" />
     </div>
     <div class="logo10">
-
+      <Icon icon="akar-icons:bootstrap-fill" color="black" class="icon-tech" />
     </div>
   </div>
 </template>
 
 <script>
-export default {
+// Iconify
+import { Icon } from '@iconify/vue';
 
+export default {
+  components: {
+    Icon
+  }
 }
 </script>
 
 <style scoped lang="scss">
+.line-logo {
+  margin-top: 6.15vw;
+  margin-left: 15vw;
+  width: 612px;
+  border-top: 1px solid #000;
+}
+
 .all-logo {
   width: 612px;
   height: 187px;
-  margin: 127px 238px;
+  margin: 2.18vw 0 0 15vw;
   display: grid;
   grid-template-columns: repeat(5, 80px);
   grid-template-rows: repeat(2, 1fr);
@@ -130,7 +144,8 @@ export default {
   justify-content: center;
   }
 
-.icon {
- font-size: 36px;
+.icon-tech {
+  height: 32px;
+  width: 32px;
 }
 </style>
