@@ -12,6 +12,8 @@ export default {
 
 <style scoped>
 .fa-bars {
+  /* margin: 2.579vw 9.788vw 0 0; */
+  /* margin-top: 2.579vw; */
   position: absolute;
   right: 9.788vw;
   top: 2.579vw;

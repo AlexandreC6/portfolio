@@ -1,11 +1,11 @@
 <template>
 <div class="body">
-  <section class="title">
+  <d class="title">
     <p class="line1">The portfolio of</p>
     <p class="line2">Alexandre Camilo</p>
     <p class="line3">Fullstack developer</p>
-  </section>
-  <!-- <base-arrow>About me</base-arrow> -->
+  </d>
+  <base-arrow>About me</base-arrow>
 </div>
 </template>
 
@@ -24,6 +24,7 @@ export default {
   font-family: 'Cinzel', sans-serif;
   font-weight: 400;
   font-size: 4.125rem;
+
 }
 
 .line1{
@@ -45,5 +46,4 @@ export default {
   left: 43.519vw;
   font-size: 2.75rem;
 }
-
 </style>
