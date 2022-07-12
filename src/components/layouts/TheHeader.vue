@@ -1,10 +1,8 @@
 <template>
-  <div class="sticky">
+    <menu-hamburger></menu-hamburger>
     <div class="logo">
       alex.camilo
     </div>
-    <menu-hamburger></menu-hamburger>
-  </div>
   <div class="logo-socials">
     <ul>
       <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
@@ -26,18 +24,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.sticky{
-  position: sticky;
-  top: 0;
-}
 .logo{
+  position: fixed;
+  z-index: 8;
+  top: 2.579vw;
+  left: 8.862vw;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 23px;
   color: #0F4C81;
-  position: absolute;
-  top: 2.579vw;
-  left: 8.862vw;
   // margin: 2.579vw 0 0 8.862vw;
   text-transform: uppercase;
 }
