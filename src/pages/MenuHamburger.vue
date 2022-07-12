@@ -1,9 +1,16 @@
 <template>
   <div>
     <nav class="nav-menu" :class="{ active: isActive }">
+      <div class="left">
+        <p class="contact">Contact</p>
+        <p class="email">alex.camilo6@hotmail.ch</p>
+      </div>
+      <span class="line-between"></span>
+      <div class="right">
       <a href="#">Home</a>
       <a href="#">About me</a>
       <a href="#">Projects</a>
+      </div>
     </nav>
     <button
       type="button"
@@ -35,7 +42,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   /* Page nav */
 
   .nav-menu {
@@ -46,8 +53,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background: #fff;
+    /* flex-direction: column; */
+    background: #FBF4EC;
     border-bottom: 1px solid rgb(48, 48, 48);
     transform: translateY(-100%);
     transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
@@ -57,13 +64,58 @@ export default {
     transform: translate(0);
   }
 
-  .nav-menu a {
-    font-family: sans-serif;
-    color: #000;
-    font-size: 20px;
-    /* display: block; */
-    margin: 10px 0;
-    text-decoration: none;
+      .line-between {
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 3px;
+        background: #000;
+      }
+
+    .left {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .contact {
+        font-family: 'Cinzel', sans-serif;
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+        font-size: 3.96vw;
+        text-transform: uppercase;
+      }
+
+      .email {
+        font-family: 'Cinzel', sans-serif;
+        font-weight: 400;
+        font-size: 1vw;
+        color: #0F4C81;
+        text-transform: uppercase;
+        padding-top: 10px;
+      }
+    }
+
+  .right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      font-family: 'Cinzel', sans-serif;
+      text-decoration: none;
+      color: #000;
+      font-weight: 700;
+      font-size: 3.96vw;
+      padding-bottom: 192px;
+      text-transform: uppercase;
+    }
   }
 
 /* Button toggle menu */
