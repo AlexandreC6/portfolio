@@ -29,6 +29,11 @@ export default {
         }
       ]
     }
+  },
+  provide(){
+    return{
+      projects: this.projects
+    }
   }
 
 }
