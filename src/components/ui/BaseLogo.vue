@@ -55,13 +55,10 @@ export default {
 }
 
 .all-logo {
-  // width: 612px;
   width: 40.42vw;
-  // height: 187px;
   height: 12.35vw;
   margin: 2.18vw 0 0 15vw;
   display: grid;
-  // grid-template-columns: repeat(5, 80px);
   grid-template-columns: repeat(5, 5.28vw);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 53px;
@@ -125,7 +122,9 @@ export default {
   }
 
 .icon-tech {
-  height: 2.11vw;
-  width: 2.11vw;
+//   height: 2.11vw;
+//   width: 2.11vw;
+  height: 50%;
+  width: auto;
 }
 </style>

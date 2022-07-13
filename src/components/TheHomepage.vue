@@ -30,19 +30,21 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  line-height: 53px;
+
 }
 
 .line1 {
-  transform: translateX(-25%);
+  transform: translateX(-65px);
 }
 
 .line2 {
-  transform: translateX(-50%);
+  transform: translateX(-178px);
   color: #0F4C81;
 }
 
 .line3{
-  transform: translateX(20%);
+  transform: translateX(186px);
   font-size: 2.75rem;
 }
 </style>
