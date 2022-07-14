@@ -4,7 +4,7 @@
     <ul v-for="project in projects" :key="project.id">
       <li>
         <span class="index">({{project.id}})</span>
-        <span class="title">{{ project.title }}</span>
+        <router-link :to="{path: '/project/' + project.id}" :id="project.id" :title="project.title"><span class="title">{{ project.title }}</span></router-link>
       </li>
     </ul>
   </div>
@@ -27,7 +27,8 @@ export default {
           id: 3,
           title: 'Project 3'
         }
-      ]
+      ],
+      message: 'Hello World from Projects'
     }
   },
   provide(){

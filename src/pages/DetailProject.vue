@@ -1,15 +1,17 @@
 <template>
   <div>
-      <p>{{titleProject}}</p>
+    <div>
+      <h1>{{fullName}}</h1>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  inject:['projects'],
-  data(){
-    return {
-      fullProject: this.projects
+  props:['id', 'title'],
+  computed: {
+    fullName(){
+      return this.title;
     }
   }
 }
