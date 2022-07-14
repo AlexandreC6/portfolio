@@ -4,10 +4,10 @@
     <!-- <ul v-for="project in projects" :key="project.id"> -->
     <ul>
       <li>
-        <!-- <span class="index">({{project.id}})</span> -->
-        <!-- <span class="title">{{ project.title }}</span> -->
-        <span class="index">{{store.projects[0].id}}</span>
-        <span class="title">{{store.projects[0].title}}</span>
+        <span class="index">({{project.id}})</span>
+        <span class="title">{{ project.title }}</span>
+        <!-- <span class="index">{{store.projects[0].id}}</span>
+        <span class="title">{{store.projects[0].title}}</span> -->
       </li>
     </ul>
   </div>
