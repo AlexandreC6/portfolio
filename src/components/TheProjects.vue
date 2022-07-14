@@ -1,41 +1,43 @@
 <template>
   <div class="my-projects">
-    <h1>Projects</h1>
-    <ul v-for="project in projects" :key="project.id">
+    <h1>Projects{{store.doubleCounter}}</h1>
+    <!-- <ul v-for="project in projects" :key="project.id"> -->
+    <ul>
       <li>
         <span class="index">({{project.id}})</span>
         <router-link :to="{path: '/project/' + project.id}" :id="project.id" :title="project.title"><span class="title">{{ project.title }}</span></router-link>
+        <!-- <span class="index">{{store.projects[0].id}}</span>
+        <span class="title">{{store.projects[0].title}}</span> -->
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import { useProductStore } from "@/store/ProjectStore";
+
 export default {
   data(){
+    const store = useProductStore()
     return {
-      projects:[
-        {
-          id: 1,
-          title: 'Projet 1'
-        },
-        {
-          id: 2,
-          title: 'Project 2'
-        },
-        {
-          id: 3,
-          title: 'Project 3'
-        }
-      ],
-      message: 'Hello World from Projects'
+      // projects:[
+      //   {
+      //     id: 1,
+      //     title: 'Projet 1'
+      //   },
+      //   {
+      //     id: 2,
+      //     title: 'Project 2'
+      //   },
+      //   {
+      //     id: 3,
+      //     title: 'Project 3'
+      //   }
+      // ],
+      store,
+      getUserById: store.getUserById
     }
   },
-  provide(){
-    return{
-      projects: this.projects
-    }
-  }
 
 }
 </script>
