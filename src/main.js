@@ -24,10 +24,7 @@ app.component('base-card', BaseCard);
 app.component('base-logo', BaseLogo);
 app.component('font-awesome-icon', FontAwesomeIcon)
 
-<<<<<<< HEAD
-=======
 app.use(pinia);
->>>>>>> main
 app.use(router);
 
 app.mount('#app');

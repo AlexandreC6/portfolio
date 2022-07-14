@@ -1,13 +1,11 @@
 <template>
   <div class="my-projects">
     <h1>Projects{{store.doubleCounter}}</h1>
-    <!-- <ul v-for="project in projects" :key="project.id"> -->
-    <ul>
+    <!-- <ul> -->
+    <ul v-for="project in projects" :key="project.id">
       <li>
         <span class="index">({{project.id}})</span>
-        <router-link :to="{path: '/project/' + project.id}" :id="project.id" :title="project.title"><span class="title">{{ project.title }}</span></router-link>
-        <!-- <span class="index">{{store.projects[0].id}}</span>
-        <span class="title">{{store.projects[0].title}}</span> -->
+        <router-link :to="{path: '/project/' + project.id}"><span class="title">{{ project.title }}</span></router-link>
       </li>
     </ul>
   </div>
@@ -20,21 +18,8 @@ export default {
   data(){
     const store = useProductStore()
     return {
-      // projects:[
-      //   {
-      //     id: 1,
-      //     title: 'Projet 1'
-      //   },
-      //   {
-      //     id: 2,
-      //     title: 'Project 2'
-      //   },
-      //   {
-      //     id: 3,
-      //     title: 'Project 3'
-      //   }
-      // ],
       store,
+      projects: store.projects,
       getUserById: store.getUserById
     }
   },

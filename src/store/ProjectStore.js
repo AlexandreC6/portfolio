@@ -1,21 +1,20 @@
 import { defineStore } from "pinia";
 
 export const useProductStore = defineStore('ProductStore',{
-  // state
   state: () => {
     return {
       projects: [
         {
           id: 1,
-          title: 'Projet 1'
+          title: 'Camilo Breakfast'
         },
         {
           id: 2,
-          title: 'Project 2'
+          title: 'Find a coach'
         },
         {
           id: 3,
-          title: 'Project 3'
+          title: 'Project Omega'
         }
       ]
     }
