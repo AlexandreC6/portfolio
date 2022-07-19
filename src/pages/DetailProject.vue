@@ -1,5 +1,6 @@
 <template>
   <div>
+    <transtion name="rotate">
     <div class="page">
       <!-- <h1>{{projects[projectID].title}}</h1> -->
       <div class="page__image" :class="{
@@ -12,6 +13,7 @@
       <div class="page__image projectOne__imageThree">
       </div>
     </div>
+    </transtion>
     <div class="detail">
 
     </div>
@@ -48,18 +50,16 @@ export default {
 
 .page__image {
   transform: translate(-50%, -50%);
-  position: relative;
 }
 
 .projectOne__imageOne,
 .projectOne__imageTwo,
 .projectOne__imageThree {
-  height: 900px;
-  width: 480px;
+  height: 41vw;
+  width: 20vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  position: absolute;
 
 }
 
@@ -68,25 +68,56 @@ export default {
   background-image: url(../assets/camilo-breafast/camilo-breakfast-home.jpg);
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
 }
 
 .projectOne__imageTwo{
   background-image: url(../assets/camilo-breafast/camilo-breakfast-payment.jpg);
   z-index: -1;
-  transform: rotate(17deg) scale(0.9);
-  top: 20%;
+  // transform: rotate(17deg) scale(0.9);
+  position: absolute;
+  top: 50%;
   left: 50%;
+  animation: rotationRight 2s;
+  transform: translate(18%, -50%) rotate(17deg) scale(0.9);
+
 }
 
 .projectOne__imageThree{
   background-image: url(../assets/camilo-breafast/camilo-breakfast-list-bakery.jpg);
-  transform: rotate(-17deg) scale(0.9);
-  top: 22%;
-  left: 32%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-118%, -50%) rotate(-17deg) scale(0.9);
+  // transform: rotate(-17deg) scale(0.8);
+  // top: 16%;
+  // left: 29%;
   z-index: -1;
+  animation: rotationLeft 2s;
 }
 
+@keyframes rotationLeft {
+  from {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-118%, -50%) rotate(-17deg) scale(0.9);
+    opacity: 1;
+  }
+}
 
+@keyframes rotationRight {
+  from {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(18%, -50%) rotate(17deg) scale(0.9);
+    opacity: 1;
+  }
+}
 
 //Image pour le deuxième projet
 
