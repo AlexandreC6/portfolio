@@ -1,7 +1,6 @@
 <template>
   <div class="my-projects">
     <h1>Projects{{store.doubleCounter}}</h1>
-    <!-- <ul> -->
     <ul v-for="project in projects" :key="project.id">
       <li>
         <span class="index">({{project.id}})</span>
