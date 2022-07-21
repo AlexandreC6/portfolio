@@ -28,7 +28,6 @@ export default {
 
 <style scoped lang="scss">
 .my-projects {
-  border: 1px solid yellow;
   height: 80vh;
   width: 100%;
   display: flex;

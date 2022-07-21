@@ -15,6 +15,5 @@ export default {
 .about-me {
   height: 80vh;
   width: 100%;
-  border: 1px solid red;
 }
 </style>

@@ -7,15 +7,17 @@ export const useProductStore = defineStore('ProductStore',{
         {
           id: 1,
           title: 'Camilo Breakfast',
-          imageOne: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1658233986/portfolio/camilo%20breakfeast/camilo-breakfast-home.jpg',
-          imageTwo: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1658233993/portfolio/camilo%20breakfeast/camilo-breakfast-list-store.jpg',
-          imageThree: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1658233996/portfolio/camilo%20breakfeast/camilo-breakfast-payment.jpg'
+          description: "Conception d’une application mobile créer en une semaine pour la présentation finale du bootcamp Le Wagon Lausanne. Du design au deploiment, pour pouvoir expérimenter tous les details de la mise en production d’une application",
+          technologies: ['Ruby', 'Ruby on Rails','MySQL', 'HTML', 'CSS', 'Rest Api', 'Heroku'],
+          link: 'https://camilo-breakfast.herokuapp.com/',
+          date: 'Avril 2022'
         },
         {
           id: 2,
           title: 'Find a coach',
-          imageOne: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1658233996/portfolio/camilo%20breakfeast/camilo-breakfast-payment.jpg',
-          imageTwo: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1658235050/portfolio/Find-a-coach/find-a-coach-details.png'
+          description: 'Conception du projet finale du cours Udemy, une application de recherche de coach. Mettre en pratique toutes les connaissances acquis durant le cour de Vue.js.',
+          technologies: ['Vue Js', 'HTML', 'CSS', 'Firebase'],
+          date: 'Juin 2022'
         },
         {
           id: 3,

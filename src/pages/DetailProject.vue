@@ -1,135 +1,159 @@
 <template>
   <div>
-    <transtion name="rotate">
-    <div class="page">
-      <!-- <h1>{{projects[projectID].title}}</h1> -->
-      <div class="page__image" :class="{
-        projectOne__imageOne: projectID === 0,
-        imageTwo: projectID === 1
-      }">
-      </div>
-      <div class="page__image projectOne__imageTwo">
-      </div>
-      <div class="page__image projectOne__imageThree">
-      </div>
+    <div class="page-picture">
+      <camilo-breakfast v-if="projectID === 0"></camilo-breakfast>
+      <find-a-coach v-if="projectID === 1"></find-a-coach>
     </div>
-    </transtion>
-    <div class="detail">
-
+    <div class="page-details">
+      <h1>{{projects[projectID].title}}</h1>
+      <p>{{array_description}}</p>
+      <div class="container">
+        <div class="box">
+          <section v-for="sentence in splitSentence(projectID)" :key="sentence.id">
+            <p>{{sentence[0]}}</p>
+            <span v-if="sentence[1]">
+              <p>{{sentence[1]}}</p>
+            </span>
+          </section>
+        </div>
+        <div class="right-side">
+          <div class="date">
+            <h4>Date</h4>
+            <p>{{projects[projectID].date}}</p>
+          </div>
+          <div class="techno">
+            <h4>Technologies</h4>
+            <div v-for="techno in projects[projectID].technologies" :key="techno.id">
+              <p>{{techno}}</p>
+            </div>
+          </div>
+          <div class="button">
+            <base-button class="">Github</base-button>
+            <base-button>Link</base-button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import { useProductStore } from "@/store/ProjectStore";
+import CamiloBreakfast from '../components/projects/CamiloBreakfast.vue';
+import FindACoach from '../components/projects/FindACoach.vue'
+
 export default {
   data(){
     const store = useProductStore()
     return {
       store,
       projects: store.projects,
+      arrayOfDescription: []
     }
   },
+  components: {
+    CamiloBreakfast,
+    FindACoach
+  },
   computed: {
+    splitDescription(){
+      return this.arrayOfDescription;
+    },
     projectID(){
       // Return the ID from the browser
       return this.$route.params.id - 1;
     },
-    image(){
-      return this.store.projects[this.projectID].image;
+  },
+  methods: {
+    splitSentence(id){
+      const array = this.projects[id].description.split('.')
+      this.arrayOfDescription.push(array);
+      return this.arrayOfDescription
     }
   }
 }
 </script>
 <style scoped lang="scss">
-.page {
+.page-picture {
   height: 100vh;
   width: 100%;
-  border: 1px solid blue;
 }
 
-.page__image {
-  transform: translate(-50%, -50%);
-}
+.page-details {
+  height: 80vh;
+  width: 100%;
+  padding: 0 9.788vw 0 8.10546875vw;
 
-.projectOne__imageOne,
-.projectOne__imageTwo,
-.projectOne__imageThree {
-  height: 41vw;
-  width: 20vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-}
-
-.projectOne__imageOne {
-  // ../assets/camilo-breafast/camilo-breakfast-home.jpg
-  background-image: url(../assets/camilo-breafast/camilo-breakfast-home.jpg);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: relative;
-}
-
-.projectOne__imageTwo{
-  background-image: url(../assets/camilo-breafast/camilo-breakfast-payment.jpg);
-  z-index: -1;
-  // transform: rotate(17deg) scale(0.9);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  animation: rotationRight 2s;
-  transform: translate(18%, -50%) rotate(17deg) scale(0.9);
-
-}
-
-.projectOne__imageThree{
-  background-image: url(../assets/camilo-breafast/camilo-breakfast-list-bakery.jpg);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-118%, -50%) rotate(-17deg) scale(0.9);
-  // transform: rotate(-17deg) scale(0.8);
-  // top: 16%;
-  // left: 29%;
-  z-index: -1;
-  animation: rotationLeft 2s;
-}
-
-@keyframes rotationLeft {
-  from {
-    transform: translate(-50%, -50%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(-118%, -50%) rotate(-17deg) scale(0.9);
-    opacity: 1;
+  h1 {
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 1rem;
   }
 }
+.container {
+  // background: rgba(0, 128, 0, 0.278);
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-@keyframes rotationRight {
-  from {
-    transform: translate(-50%, -50%);
-    opacity: 0;
+  .box {
+    height: 349px;
+    width: 409px;
+    box-shadow: 13px 9px 12px 0px rgba(0,0,0,0.75);
+
+    p {
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      padding: 1rem;
+    }
   }
-  to {
-    transform: translate(18%, -50%) rotate(17deg) scale(0.9);
-    opacity: 1;
+
+  .right-side {
+    height: 349px;
+    width: 200px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+
+    .date {
+      h4 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      padding-bottom: 6px;
+      text-transform: uppercase;
+      border-bottom: 1px solid black;
+      }
+      p {
+        padding: 1rem 0;
+        font-weight: 500;
+      }
+    }
+    .techno {
+      h4 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding-bottom: 6px;
+        text-transform: uppercase;
+        border-bottom: 1px solid black;
+      }
+      p {
+        font-weight: 500;
+        line-height: 22px;
+      }
+    }
+    .button {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+    }
   }
 }
 
-//Image pour le deuxième projet
 
-// .imageTwo {
-//   width: 700px;
-//   height: 700px;
-//   border: 1px solid green;
-//   // ../assets/camilo-breafast/camilo-breakfast-home.jpg
-//   background-image: url(../assets/find-a-coach/find-a-coach-menu.png) ;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: contain;
-// }
 
 </style>

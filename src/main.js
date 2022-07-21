@@ -15,6 +15,7 @@ library.add(faTwitter)
 import BaseArrow from './components/ui/BaseArrow.vue'
 import BaseCard from './components/ui/BaseCard.vue'
 import BaseLogo from './components/ui/BaseLogo.vue'
+import BaseButton from './components/ui/BaseButton.vue'
 
 const pinia = createPinia();
 const app = createApp(App);
@@ -22,7 +23,9 @@ const app = createApp(App);
 app.component('base-arrow', BaseArrow);
 app.component('base-card', BaseCard);
 app.component('base-logo', BaseLogo);
-app.component('font-awesome-icon', FontAwesomeIcon)
+app.component('font-awesome-icon', FontAwesomeIcon);
+app.component('base-button', BaseButton);
+
 
 app.use(pinia);
 app.use(router);
