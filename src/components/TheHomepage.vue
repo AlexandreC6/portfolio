@@ -1,11 +1,11 @@
 <template>
-<div class="body">
+<div class="body" id="home">
   <d class="title">
     <div class="line1">The portfolio of</div>
     <div class="line2">Alexandre Camilo</div>
     <div class="line3">Fullstack developer</div>
   </d>
-  <base-arrow>About me</base-arrow>
+  <base-arrow id="about-me">About me</base-arrow>
 </div>
 </template>
 

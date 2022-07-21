@@ -28,8 +28,8 @@
             </div>
           </div>
           <div class="button">
-            <base-button class="">Github</base-button>
-            <base-button>Link</base-button>
+            <base-button><a href="#">Github</a></base-button>
+            <base-button><a href="#">Link</a></base-button>
           </div>
         </div>
       </div>
@@ -150,6 +150,11 @@ export default {
       display: flex;
       justify-content: space-between;
       padding-top: 20px;
+
+      a{
+        text-decoration: none;
+        color: #000;
+      }
     }
   }
 }

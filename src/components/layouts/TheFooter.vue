@@ -7,12 +7,12 @@
       </div>
       <div class="container__socials">
         <!-- <p>Socials</p> -->
-        <p>Instagram</p>
-        <p>LinkedIn</p>
-        <p>Github</p>
+        <a href="https://twitter.com/alexc_fs" target="_blank"><p>twitter</p></a>
+        <a href="https://www.linkedin.com/in/alexandre-camilo6/" target="_blank"><p>LinkedIn</p></a>
+        <a href="https://github.com/AlexandreC6" target="_blank"><p>Github</p></a>
       </div>
       <div class="container__btt">
-        <p>Back to top</p>
+        <a href="/#home"><p>Back to top</p></a>
       </div>
     </div>
   </div>
@@ -25,6 +25,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .footer {
   /* height: 246px; */
   height: 20.15vh;

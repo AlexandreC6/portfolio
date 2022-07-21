@@ -1,13 +1,13 @@
 <template>
     <menu-hamburger></menu-hamburger>
-    <div class="logo">
+    <a href="/#home" class="logo">
       alex.camilo
-    </div>
+    </a>
   <div class="logo-socials">
     <ul>
-      <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="https://github.com/AlexandreC6" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/alexandre-camilo6/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="https://twitter.com/alexc_fs" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
     </ul>
   </div>
 </template>
@@ -35,6 +35,7 @@ export default {
   color: #0F4C81;
   // margin: 2.579vw 0 0 8.862vw;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .logo-socials {
