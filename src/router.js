@@ -7,7 +7,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {path: '/', component: LandingPage},
-    {path:'/project/:id', component: DetailProject},
+    {path:'/project/:id', component: DetailProject, props: true},
     {path: '/:notFound(.*)', component: NotFound}
   ],
 });
