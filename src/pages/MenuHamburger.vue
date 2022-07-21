@@ -7,9 +7,9 @@
       </div>
       <span class="line-between"></span>
       <div class="right">
-      <a href="#">Home</a>
-      <a href="#">About me</a>
-      <a href="#">Projects</a>
+      <a href="/#home" @click="toggleNav">Home</a>
+      <a href="/#about-me" @click="toggleNav">About me</a>
+      <a href="/#project" @click="toggleNav">Projects</a>
       </div>
     </nav>
     <button
