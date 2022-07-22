@@ -89,8 +89,15 @@ export default {
   left: 1%;
   transform: translateY(-50%);
 
+  background: linear-gradient(to right, #000, #000 50%, rgb(161, 161, 161) 50%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 1s ease;
+
   &:hover {
-    background: #f0f0f0;
+    background-position: 0 100%;
   }
 }
 
