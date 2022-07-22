@@ -4,7 +4,9 @@
     <ul v-for="project in projects" :key="project.id">
       <li>
         <span class="index">({{project.id}})</span>
-        <router-link :to="{path: '/project/' + project.id}"><span class="title">{{ project.title }}</span></router-link>
+        <router-link :to="{path: '/project/' + project.id}">
+          <span class="title">{{ project.title }}</span>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -19,14 +21,24 @@ export default {
     return {
       store,
       projects: store.projects,
-      getUserById: store.getUserById
+      getUserById: store.getUserById,
+      isHover: false,
     }
   },
+  methods:{
+    toggleHover(){
+      this.isHover = !this.isHover;
+    }
+  }
 
 }
 </script>
 
 <style scoped lang="scss">
+.blue{
+  color: green;
+}
+
 .my-projects {
   height: 80vh;
   width: 100%;
@@ -76,6 +88,10 @@ export default {
   top: 50%;
   left: 1%;
   transform: translateY(-50%);
+
+  &:hover {
+    background: #f0f0f0;
+  }
 }
 
 .index {

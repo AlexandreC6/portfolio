@@ -1,23 +1,40 @@
 <template>
-    <menu-hamburger></menu-hamburger>
-    <a href="/#home" class="logo">
-      alex.camilo
-    </a>
-  <div class="logo-socials">
-    <ul>
-      <li><a href="https://github.com/AlexandreC6" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/alexandre-camilo6/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-      <li><a href="https://twitter.com/alexc_fs" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-    </ul>
-  </div>
+  <transition appear @before-enter="beforeEnter" @enter="enter">
+    <div>
+        <menu-hamburger></menu-hamburger>
+        <a href="/#home" class="logo">
+          alex.camilo
+        </a>
+      <div class="logo-socials">
+        <ul>
+          <li><a href="https://github.com/AlexandreC6" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/alexandre-camilo6/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://twitter.com/alexc_fs" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </transition>
 </template>
 
 <script>
 import MenuHamburger from '@/pages/MenuHamburger.vue';
+import gsap from 'gsap';
+
 
 export default {
   components: {
     MenuHamburger
+  },
+  methods: {
+    beforeEnter(el){
+      el.style.opacity = '0';
+    },
+    enter(el){
+      gsap.to(el, {
+        duration: 2,
+        opacity: 1,
+      })
+    }
   }
 
 }
