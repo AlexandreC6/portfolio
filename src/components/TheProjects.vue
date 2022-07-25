@@ -65,7 +65,7 @@ export default {
       height: 100%;
       font-family: 'Cinzel', 'Helvitica, sans-serif';
       list-style: none;
-      font-size: 64px;
+      font-size: 4.444vw;
       font-weight: 700;
       text-transform: uppercase;
     }
@@ -80,7 +80,6 @@ export default {
   color: #000;
   letter-spacing: 0.2em;
   display: inline-block;
-  // border: 1px solid green;
   position: absolute;
   top: 50%;
   left: 1%;
@@ -110,8 +109,11 @@ export default {
 @media screen and (max-width: 600px) {
 
   .my-projects {
-    height: 80vh;
-    border: 1px solid red;
+    height: 60vh;
+
+    ul {
+      height: 100%;
+    }
   }
 }
 </style>
