@@ -35,15 +35,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.blue{
-  color: green;
-}
-
 .my-projects {
   height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: column;
+  // background: greenyellow;
 
   h1 {
     font-family: 'Cinzel', 'Helvitica, sans-serif';
@@ -108,5 +105,13 @@ export default {
   letter-spacing: 0.1em;
   position: absolute;
   top: 10%;
+}
+
+@media screen and (max-width: 600px) {
+
+  .my-projects {
+    height: 80vh;
+    border: 1px solid red;
+  }
 }
 </style>
