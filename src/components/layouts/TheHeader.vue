@@ -1,7 +1,7 @@
 <template>
   <transition appear @before-enter="beforeEnter" @enter="enter">
     <div>
-        <menu-hamburger></menu-hamburger>
+        <menu-hamburger class="hamburger"></menu-hamburger>
         <a href="/#home" class="logo">
           alex.camilo
         </a>
@@ -68,7 +68,7 @@ export default {
 
   li {
     list-style: none;
-    font-size: 30px;
+    font-size: 2rem;
 
     a{
       color: #000;
@@ -76,4 +76,15 @@ export default {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  .logo-socials {
+    li {
+      font-size: 1rem;
+    }
+  }
+}
 </style>
