@@ -116,9 +116,6 @@ export default {
   .right-side {
     height: 349px;
     width: 200px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
 
     .date {
       h4 {
@@ -159,6 +156,34 @@ export default {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .page-picture {
+  height: 80vh;
+  }
+
+  .container {
+    height: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .box {
+      transform: scale(0.8);
+    }
+  }
+
+  .right-side {
+    height: 100%;
+    width: 80vw !important;
+  }
+
+  .page-details {
+    height: 100vh;
+
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+}
 
 
 </style>

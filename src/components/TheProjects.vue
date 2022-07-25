@@ -4,7 +4,9 @@
     <ul v-for="project in projects" :key="project.id">
       <li>
         <span class="index">({{project.id}})</span>
-        <router-link :to="{path: '/project/' + project.id}"><span class="title">{{ project.title }}</span></router-link>
+        <router-link :to="{path: '/project/' + project.id}">
+          <span class="title">{{ project.title }}</span>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -19,9 +21,15 @@ export default {
     return {
       store,
       projects: store.projects,
-      getUserById: store.getUserById
+      getUserById: store.getUserById,
+      isHover: false,
     }
   },
+  methods:{
+    toggleHover(){
+      this.isHover = !this.isHover;
+    }
+  }
 
 }
 </script>
@@ -32,6 +40,7 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
+  // background: greenyellow;
 
   h1 {
     font-family: 'Cinzel', 'Helvitica, sans-serif';
@@ -56,7 +65,7 @@ export default {
       height: 100%;
       font-family: 'Cinzel', 'Helvitica, sans-serif';
       list-style: none;
-      font-size: 64px;
+      font-size: 4.444vw;
       font-weight: 700;
       text-transform: uppercase;
     }
@@ -71,11 +80,21 @@ export default {
   color: #000;
   letter-spacing: 0.2em;
   display: inline-block;
-  // border: 1px solid green;
   position: absolute;
   top: 50%;
   left: 1%;
   transform: translateY(-50%);
+
+  background: linear-gradient(to right, #000, #000 50%, rgb(161, 161, 161) 50%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 1s ease;
+
+  &:hover {
+    background-position: 0 100%;
+  }
 }
 
 .index {
@@ -85,5 +104,16 @@ export default {
   letter-spacing: 0.1em;
   position: absolute;
   top: 10%;
+}
+
+@media screen and (max-width: 600px) {
+
+  .my-projects {
+    height: 60vh;
+
+    ul {
+      height: 100%;
+    }
+  }
 }
 </style>

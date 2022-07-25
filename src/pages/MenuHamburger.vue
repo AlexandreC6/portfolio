@@ -164,4 +164,11 @@ export default {
   transform: translateY(0) rotate(-135deg);
 }
 
+@media screen and (max-width: 600px) {
+  .nav-toggler  {
+    height: 15px;
+    width: 30px;
+  }
+}
+
 </style>

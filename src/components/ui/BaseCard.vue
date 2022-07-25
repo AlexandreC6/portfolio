@@ -57,7 +57,20 @@ export default {
 .picture {
   grid-area: 1 / 2 / 2 / 3;
     img {
-      height: 185px;
+      // height: 185px;
+      height: 11.56rem;
     }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .my-description {
+    margin-top: 1rem;
+  }
 }
 </style>
