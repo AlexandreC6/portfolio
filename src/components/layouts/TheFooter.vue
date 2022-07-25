@@ -31,11 +31,9 @@ a {
 }
 
 .footer {
-  /* height: 246px; */
   height: 20.15vh;
   width: 100%;
-  padding-top: 50px;
-  margin-top: 50px;
+  padding-top: 3.472vw;
 }
 
 .container {
@@ -58,5 +56,19 @@ a {
   display: flex;
   justify-content: center;
   column-gap: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    margin-top: 10px;
+    height: 30vh;
+
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+  }
 }
 </style>
