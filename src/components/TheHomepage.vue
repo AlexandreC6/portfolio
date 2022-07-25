@@ -71,7 +71,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  line-height: 53px;
+  line-height: 3.3rem;
 
 }
 
@@ -85,7 +85,43 @@ export default {
 }
 
 .line3{
-  transform: translateX(186px);
-  font-size: 2.75rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1063px) {
+  .title {
+    line-height: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .line3 {
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    /* font-size: 1rem; */
+  }
+
+  .line1 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+  .line2 {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+  }
+  .line3 {
+    font-size: .5rem;
+    position: absolute;
+    top: 55%;
+    left: 1%;
+  }
 }
 </style>

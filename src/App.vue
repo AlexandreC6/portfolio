@@ -46,7 +46,7 @@ html{
     position: fixed;
     top: -100%;
     width: 300%;
-  pointer-events: none;
+    pointer-events: none;
 
   }
 }
