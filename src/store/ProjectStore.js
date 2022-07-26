@@ -19,10 +19,11 @@ export const useProductStore = defineStore('ProductStore',{
           technologies: ['Vue Js', 'HTML', 'CSS', 'Firebase'],
           date: 'Juin 2022'
         },
-        {
-          id: 3,
-          title: 'Project Omega'
-        }
+        // {
+        //   id: 3,
+        //   title: 'Project Omega',
+        //   description: '1 projets Javascript par jour, durant 20 jours.',
+        // }
       ]
     }
   },
