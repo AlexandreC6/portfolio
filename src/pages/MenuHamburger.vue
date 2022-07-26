@@ -106,6 +106,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 13.194vw;
 
     a {
       font-family: 'Cinzel', sans-serif;
@@ -113,7 +114,6 @@ export default {
       color: #000;
       font-weight: 700;
       font-size: 3.96vw;
-      padding-bottom: 192px;
       text-transform: uppercase;
     }
   }
