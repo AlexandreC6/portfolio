@@ -3,6 +3,7 @@
     <div class="page-picture">
       <camilo-breakfast v-if="projectID === 0"></camilo-breakfast>
       <find-a-coach v-if="projectID === 1"></find-a-coach>
+      <scroll-down></scroll-down>
     </div>
     <div class="page-details">
       <h1>{{projects[projectID].title}}</h1>
@@ -77,6 +78,10 @@ export default {
 .page-picture {
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1rem;
 }
 
 .page-details {
