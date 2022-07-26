@@ -7,10 +7,11 @@ export const useProductStore = defineStore('ProductStore',{
         {
           id: 1,
           title: 'Camilo Breakfast',
-          description: "Conception d’une application mobile créer en une semaine pour la présentation finale du bootcamp Le Wagon Lausanne. Du design au deploiment, pour pouvoir expérimenter tous les details de la mise en production d’une application",
+          description: "Premier projet déployé au sein du Wagon. Conception d’une application mobile créer en une semaine pour la présentation finale du bootcamp Le Wagon Lausanne. Du design au deploiment, pour pouvoir expérimenter tous les details de la mise en production d’une application",
           technologies: ['Ruby', 'Ruby on Rails','MySQL', 'HTML', 'CSS', 'Rest Api', 'Heroku'],
           link: 'https://camilo-breakfast.herokuapp.com/',
-          date: 'Avril 2022'
+          date: 'Avril 2022',
+          github: 'https://github.com/AlexandreC6/camilo-breakfast',
         },
         {
           id: 2,

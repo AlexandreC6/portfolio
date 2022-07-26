@@ -11,9 +11,8 @@
       <div class="container">
         <div class="box">
           <section v-for="sentence in splitSentence(projectID)" :key="sentence.id">
-            <p>{{sentence[0]}}</p>
-            <span v-if="sentence[1]">
-              <p>{{sentence[1]}}</p>
+            <span v-for="phrase in sentence" :key="phrase.id">
+              <p>{{phrase}}</p>
             </span>
           </section>
         </div>
@@ -29,8 +28,12 @@
             </div>
           </div>
           <div class="button">
-            <base-button><a href="#">Github</a></base-button>
-            <base-button><a href="#">Link</a></base-button>
+            <base-button v-if="projects[projectID].github != null">
+              <a :href="projects[projectID].github" target="_blank">Github</a>
+            </base-button>
+            <base-button v-if="projects[projectID].link != null">
+              <a :href="projects[projectID].link" target="_blank">Link</a>
+            </base-button>
           </div>
         </div>
       </div>
