@@ -16,15 +16,17 @@ export const useProductStore = defineStore('ProductStore',{
         {
           id: 2,
           title: 'Find a coach',
-          description: 'Conception du projet finale du cours Udemy, une application de recherche de coach. Mettre en pratique toutes les connaissances acquis durant le cour de Vue.js.',
+          description: 'Conception du projet finale du cours Udemy, une application de recherche de coach. Mettre en pratique toutes les connaissances acquis durant le cour de Vue Js.',
           technologies: ['Vue Js', 'HTML', 'CSS', 'Firebase'],
           date: 'Juin 2022'
         },
-        // {
-        //   id: 3,
-        //   title: 'Project Omega',
-        //   description: '1 projets Javascript par jour, durant 20 jours.',
-        // }
+        {
+          id: 3,
+          title: '20 projects JS',
+          description: "Je me suis lancé comme défi de consolider mes connaissances en Javascript. J'ai choisi de faire un projet Javascript tous les jours pendant 20 jours. J'actualise cette page tous les jours !",
+          technologies: ['HTML', 'Javascript', 'CSS'],
+          date: ' Juillet 2022'
+        }
       ]
     }
   },

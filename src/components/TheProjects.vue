@@ -71,7 +71,7 @@ export default {
     }
 
   }
-    ul:nth-child(4){
+    ul:last-child{
       border-bottom: 2px solid #000;
     }
 }
