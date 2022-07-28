@@ -20,12 +20,10 @@ import gsap from 'gsap';
 
 export default {
   methods: {
-    // where the animation will start from
     beforeEnter(el){
       el.style.opacity = '0';
       el.style.transform = 'translateX(300px)';
     },
-    // where the animation will end up
     enter(el) {
       gsap.to(el, {
         duration: 2,
