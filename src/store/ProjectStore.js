@@ -16,15 +16,40 @@ export const useProductStore = defineStore('ProductStore',{
         {
           id: 2,
           title: 'Find a coach',
-          description: 'Conception du projet finale du cours Udemy, une application de recherche de coach. Mettre en pratique toutes les connaissances acquis durant le cour de Vue.js.',
+          description: 'Conception du projet finale du cours Udemy, une application de recherche de coach. Mettre en pratique toutes les connaissances acquis durant le cour de Vue Js.',
           technologies: ['Vue Js', 'HTML', 'CSS', 'Firebase'],
           date: 'Juin 2022'
         },
-        // {
-        //   id: 3,
-        //   title: 'Project Omega',
-        //   description: '1 projets Javascript par jour, durant 20 jours.',
-        // }
+        {
+          id: 3,
+          title: '20 projects JS',
+          description: "Je me suis lancé comme défi de consolider mes connaissances en Javascript. J'ai choisi de faire un projet Javascript tous les jours pendant 20 jours. J'actualise cette page tous les jours !",
+          technologies: ['HTML', 'Javascript', 'CSS'],
+          date: ' Juillet 2022'
+        }
+      ],
+      projectJs : [
+        {
+          id: 1,
+          title:"Calcul d'IMC",
+          link: "https://google.ch",
+          background: "https://res.cloudinary.com/dguwsqu9j/image/upload/v1659023220/portfolio/projectJS/Calcul-IMC_ui18jn.png",
+          description: "Le but de ce projet est de coder un calculateur d'IMC à partir des valeurs rentrées par un utilisateur dans les deux inputs."
+        },
+        {
+          id: 2,
+          title: "Quizz",
+          link: "https://google.ch",
+          background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659023220/portfolio/projectJS/Quizz_qtqny6.png',
+          description: 'Le but de ce projet est de coder un quizz qui affiche des messages et des couleurs différentes en fonction des résultats de ce dernier.'
+        },
+        {
+          id: 3,
+          title: 'Api Wikipédia',
+          link: 'https://google.ch',
+          background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659025184/portfolio/projectJS/Api-Wiki-Reduit_zvdgav.png',
+          description: "Le but de ce projet est de coder un système de recherche grâce à l'API de Wikipedia."
+        }
       ]
     }
   },
