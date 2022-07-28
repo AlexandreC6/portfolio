@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="page-picture">
+    <div class="page-picture"  v-if="projectID !== 2">
       <camilo-breakfast v-if="projectID === 0"></camilo-breakfast>
       <find-a-coach v-if="projectID === 1"></find-a-coach>
-      <scroll-down></scroll-down>
+      <section class="scroll"><scroll-down></scroll-down></section>
     </div>
-    <div class="page-details">
+    <div class="page-details" :class="{'project-javascript': projectID === 2 }">
       <h1>{{projects[projectID].title}}</h1>
       <p>{{array_description}}</p>
       <div class="container">
@@ -38,6 +38,7 @@
         </div>
       </div>
     </div>
+    <project-js v-if="projectID === 2"></project-js>
   </div>
 </template>
 
@@ -45,6 +46,7 @@
 import { useProductStore } from "@/store/ProjectStore";
 import CamiloBreakfast from '../components/projects/CamiloBreakfast.vue';
 import FindACoach from '../components/projects/FindACoach.vue'
+import ProjectJs from '../components/projects/ProjectJs.vue'
 
 export default {
   data(){
@@ -57,7 +59,8 @@ export default {
   },
   components: {
     CamiloBreakfast,
-    FindACoach
+    FindACoach,
+    ProjectJs
   },
   computed: {
     splitDescription(){
@@ -85,6 +88,12 @@ export default {
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 1rem;
+
+  .scroll {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+  }
 }
 
 .page-details {
@@ -100,6 +109,13 @@ export default {
     padding-bottom: 1rem;
   }
 }
+
+.project-javascript {
+  h1 {
+    padding-top: 90px;
+  }
+}
+
 .container {
   // background: rgba(0, 128, 0, 0.278);
   width: 100%;

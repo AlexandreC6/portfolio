@@ -27,6 +27,29 @@ export const useProductStore = defineStore('ProductStore',{
           technologies: ['HTML', 'Javascript', 'CSS'],
           date: ' Juillet 2022'
         }
+      ],
+      projectJs : [
+        {
+          id: 1,
+          title:"Calcul d'IMC",
+          link: "https://google.ch",
+          background: "https://res.cloudinary.com/dguwsqu9j/image/upload/v1659023220/portfolio/projectJS/Calcul-IMC_ui18jn.png",
+          description: "Le but de ce projet est de coder un calculateur d'IMC à partir des valeurs rentrées par un utilisateur dans les deux inputs."
+        },
+        {
+          id: 2,
+          title: "Quizz",
+          link: "https://google.ch",
+          background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659023220/portfolio/projectJS/Quizz_qtqny6.png',
+          description: 'Le but de ce projet est de coder un quizz qui affiche des messages et des couleurs différentes en fonction des résultats de ce dernier.'
+        },
+        {
+          id: 3,
+          title: 'Api Wikipédia',
+          link: 'https://google.ch',
+          background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659025184/portfolio/projectJS/Api-Wiki-Reduit_zvdgav.png',
+          description: "Le but de ce projet est de coder un système de recherche grâce à l'API de Wikipedia."
+        }
       ]
     }
   },
