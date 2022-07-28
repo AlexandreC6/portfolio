@@ -1,5 +1,5 @@
 <template>
-  <div class="images">
+  <div class="images" id="top">
     <img src="../../assets/find-a-coach/find-a-coach-menu.png">
     <img src="../../assets/find-a-coach/find-a-coach-details.png">
   </div>

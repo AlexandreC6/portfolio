@@ -77,6 +77,10 @@ export default {
       this.arrayOfDescription.push(array);
       return this.arrayOfDescription
     }
+  },
+  mounted () {
+    // https://renatello.com/vue-js-scroll-top/
+    window.scrollTo(0, 0)
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="top">
     <div class="page__image projectOne__imageOne">
     </div>
     <div class="page__image projectOne__imageTwo">
@@ -8,12 +8,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>
 
 <style scoped lang="scss">
 

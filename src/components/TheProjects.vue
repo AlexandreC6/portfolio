@@ -4,7 +4,7 @@
     <ul v-for="project in projects" :key="project.id">
       <li>
         <span class="index">({{project.id}})</span>
-        <router-link :to="{path: '/project/' + project.id}">
+        <router-link :to="{path: '/project/' + project.id + '/#top'}">
           <span class="title">{{ project.title }}</span>
         </router-link>
       </li>

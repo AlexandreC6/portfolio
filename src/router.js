@@ -9,8 +9,7 @@ const router = createRouter({
     {path: '/', component: LandingPage},
     {path:'/project/:id', component: DetailProject, props: true},
     {path: '/:notFound(.*)', component: NotFound}
-  ],
+  ]
 });
-
 
 export default router
