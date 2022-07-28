@@ -54,4 +54,12 @@ export default {
 .container-grid > base-project {
   border: 1px solid red;
 }
+
+@media screen and (max-width: 500px) {
+  .container-grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 </style>
