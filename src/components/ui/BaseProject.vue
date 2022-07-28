@@ -66,4 +66,11 @@ export default {
 .card:hover figcaption > h3 {
   opacity: 1;
 }
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 300px;
+    height: 300px;
+  }
+}
 </style>
