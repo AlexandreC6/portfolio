@@ -95,6 +95,7 @@ export default {
 
   .scroll {
     position: absolute;
+    transform: translate(-50%,);
     bottom: 1rem;
     left: 50%;
   }
@@ -208,6 +209,7 @@ export default {
     height: 100vh;
 
     h1 {
+      padding-top: 60px;
       font-size: 1.7rem;
     }
   }
