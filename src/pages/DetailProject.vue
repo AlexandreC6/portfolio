@@ -191,7 +191,7 @@ export default {
   }
 
   .container {
-    height: 90%;
+    height: 80%;
     flex-direction: column;
     justify-content: space-between;
 
@@ -209,7 +209,7 @@ export default {
     height: 100vh;
 
     h1 {
-      margin-top: 60px;
+      padding-top: 60px;
       font-size: 1.7rem;
     }
   }
