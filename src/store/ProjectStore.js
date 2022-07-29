@@ -18,7 +18,8 @@ export const useProductStore = defineStore('ProductStore',{
           title: 'Find a coach',
           description: 'Conception du projet finale du cours Udemy, une application de recherche de coach. Mettre en pratique toutes les connaissances acquis durant le cour de Vue Js.',
           technologies: ['Vue Js', 'HTML', 'CSS', 'Firebase'],
-          date: 'Juin 2022'
+          date: 'Juin 2022',
+          github: 'https://github.com/AlexandreC6/find-a-coach'
         },
         {
           id: 3,
