@@ -93,10 +93,4 @@ export default {};
     opacity: 0.5;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .scrolldown {
-    margin-bottom: 30px;
-  }
-}
 </style>
