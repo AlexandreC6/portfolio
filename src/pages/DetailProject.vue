@@ -209,7 +209,7 @@ export default {
     height: 100vh;
 
     h1 {
-      padding-top: 60px;
+      margin-top: 60px;
       font-size: 1.7rem;
     }
   }
