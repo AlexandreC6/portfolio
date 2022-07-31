@@ -4,13 +4,17 @@
     <figcaption>
       <h3>{{title}}</h3>
       <p>{{description}}</p>
+      <div class="btns">
+        <base-button><a :href="github" target="_blank">Github</a></base-button>
+        <base-button><a :href="link" target="_blank">Link</a></base-button>
+      </div>
     </figcaption>
   </figure>
 </template>
 
 <script>
 export default {
-  props: ['title', 'image', "link", "description"]
+  props: ['title', 'image', "link", "description", "github"]
 }
 </script>
 
@@ -67,6 +71,15 @@ export default {
   opacity: 1;
 }
 
+.btns {
+  text-align: center;
+  padding-top: 30px ;
+}
+
+.btns a {
+  text-decoration: none;
+  color: black;
+}
 @media screen and (max-width: 600px) {
   .card {
     width: 300px;

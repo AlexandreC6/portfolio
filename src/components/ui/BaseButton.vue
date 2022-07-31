@@ -16,22 +16,4 @@ button{
   margin-right: 0.5rem;
   display: inline-block;
 }
-a:hover,
-a:active,
-button:hover,
-button:active {
-  animation: slide-in 1s ease-out;
-  border: 1px solid #0F4C81 !important;
-  color: #0F4C81 !important;
-}
-
-@keyframes slide-in {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.2);
-  }
-
-}
 </style>
