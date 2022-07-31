@@ -117,7 +117,8 @@ export default {
 
 .project-javascript {
   h1 {
-    padding-top: 90px;
+    // padding-top: 90px;
+    padding-top: 5.319vw;
   }
 }
 

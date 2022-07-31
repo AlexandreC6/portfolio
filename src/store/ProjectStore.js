@@ -33,23 +33,42 @@ export const useProductStore = defineStore('ProductStore',{
         {
           id: 1,
           title:"Calcul d'IMC",
-          link: "https://google.ch",
+          link: "https://calculateur-imc.netlify.app",
           background: "https://res.cloudinary.com/dguwsqu9j/image/upload/v1659023220/portfolio/projectJS/Calcul-IMC_ui18jn.png",
-          description: "Le but de ce projet est de coder un calculateur d'IMC à partir des valeurs rentrées par un utilisateur dans les deux inputs."
+          description: "Le but de ce projet est de coder un calculateur d'IMC à partir des valeurs rentrées par un utilisateur dans les deux inputs.",
+          github: 'https://github.com/AlexandreC6/IMC-app'
         },
         {
           id: 2,
           title: "Quizz",
-          link: "https://google.ch",
+          link: "https://quizz-culture-generale.netlify.app",
           background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659023220/portfolio/projectJS/Quizz_qtqny6.png',
-          description: 'Le but de ce projet est de coder un quizz qui affiche des messages et des couleurs différentes en fonction des résultats de ce dernier.'
+          description: 'Le but de ce projet est de coder un quizz qui affiche des messages et des couleurs différentes en fonction des résultats de ce dernier.',
+          github: 'https://github.com/AlexandreC6/Quizz-app'
         },
         {
           id: 3,
           title: 'Api Wikipédia',
-          link: 'https://google.ch',
+          link: 'https://wiki-app6.netlify.app',
           background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659025184/portfolio/projectJS/Api-Wiki-Reduit_zvdgav.png',
-          description: "Le but de ce projet est de coder un système de recherche grâce à l'API de Wikipedia."
+          description: "Le but de ce projet est de coder un système de recherche grâce à l'API de Wikipedia.",
+          github: 'https://github.com/AlexandreC6/WikiApp'
+        },
+        {
+          id: 4,
+          title: 'Météo App',
+          link: 'https://meteo-app-js.netlify.app',
+          background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659262197/portfolio/projectJS/meteo-app_yfrg1r.png',
+          description: "Ce projet va vous entraîner à utiliser une API, manipuler des données et adapter une interface avec ces dernières.",
+          github: 'https://github.com/AlexandreC6/meteo-app'
+        },
+        {
+          id: 5,
+          title: 'Générateur de cookies',
+          link: 'https://generator-cookies.netlify.app',
+          background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659262324/portfolio/projectJS/generator-cookies_xuvoer.png',
+          description: 'Le but de ce projet est de créer un générateur de Cookies',
+          github: 'https://github.com/AlexandreC6/cookies-generator'
         }
       ]
     }

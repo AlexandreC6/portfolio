@@ -7,6 +7,7 @@
         :image="projectJs.background"
         :link="projectJs.link"
         :description="projectJs.description"
+        :github="projectJs.github"
       >
       </base-project>
     </span>
@@ -39,10 +40,11 @@ export default {
 <style scoped>
 .container-grid {
   /* height: 80vh; */
-  height: 500px;
-  width: 100%;
-  padding: 100px 9.788vw;
-  /* border: 1px solid blue; */
+  /* height: 500px; */
+  height: 16.622vw;
+  max-width: 100vw;
+  padding: 0 9.788vw;
+  flex-wrap: wrap;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -60,6 +62,22 @@ export default {
     height: 100%;
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .container-grid {
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container-grid {
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
   }
 }
 </style>
