@@ -1,4 +1,5 @@
 <template>
+<div class="container">
   <div class="container-grid" id="top">
     <!-- <p>{{store.projectJs[0].title}}</p> -->
     <span v-for="projectJs in storeProject" :key="projectJs.id">
@@ -12,6 +13,7 @@
       </base-project>
     </span>
   </div>
+</div>
 </template>
 
 <script>
@@ -39,22 +41,18 @@ export default {
 
 <style scoped>
 .container-grid {
-  /* height: 80vh; */
-  /* height: 500px; */
-  height: 16.622vw;
+  height: 28vw;
+  display: block;
   max-width: 100vw;
   padding: 0 9.788vw;
   flex-wrap: wrap;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
   grid-column-gap: .5rem;
   grid-row-gap: .5rem;
-}
-
-.container-grid > base-project {
-  border: 1px solid red;
 }
 
 @media screen and (max-width: 500px) {

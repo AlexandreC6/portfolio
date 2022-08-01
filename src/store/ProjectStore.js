@@ -69,6 +69,14 @@ export const useProductStore = defineStore('ProductStore',{
           background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659262324/portfolio/projectJS/generator-cookies_xuvoer.png',
           description: 'Le but de ce projet est de créer un générateur de Cookies',
           github: 'https://github.com/AlexandreC6/cookies-generator'
+        },
+        {
+          id: 6,
+          title: 'Générateur de linear gradient',
+          link: 'https://color-linear-gradient-generator.netlify.app',
+          background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659370922/portfolio/projectJS/generator-gradient_ddt2re.png',
+          description: 'Le but de ce projet est de manipuler des inputs de couleurs afin de créer des "linear-gradient" et pouvoir modifier le DOM avec les données du user.',
+          github: 'https://github.com/AlexandreC6/Generator-gradient'
         }
       ]
     }
