@@ -77,6 +77,22 @@ export const useProductStore = defineStore('ProductStore',{
           background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659370922/portfolio/projectJS/generator-gradient_ddt2re.png',
           description: 'Le but de ce projet est de manipuler des inputs de couleurs afin de créer des "linear-gradient" et pouvoir modifier le DOM avec les données du user.',
           github: 'https://github.com/AlexandreC6/Generator-gradient'
+        },
+        {
+          id: 7,
+          title: 'Pomodorro App',
+          link: 'https://pomodoro-appjs.netlify.app/',
+          background: "https://res.cloudinary.com/dguwsqu9j/image/upload/v1659448917/portfolio/projectJS/pomodoro-app.png",
+          description: "Le système Pomodoro est une technique de gestion de temps qui consiste à travailler pendant 30-45 minutes puis à prendre un repos de quelques minutes, et recommencer le tout plusieurs fois.",
+          github: 'https://github.com/AlexandreC6/pomodoro-app'
+        },
+        {
+          id: 8,
+          title: "Clone Unsplash",
+          link: 'https://scroll-inifni-unsplash.netlify.app',
+          background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659449148/portfolio/projectJS/clone-unsplash.png',
+          description: "Utiliser l'API de la banque d'images Unsplash afin d'intégrer un scroll infini + un système de recherche",
+          github: 'https://github.com/AlexandreC6/Unsplash-scroll-Infini'
         }
       ]
     }
