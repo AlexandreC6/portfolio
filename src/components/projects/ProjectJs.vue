@@ -45,7 +45,6 @@ export default {
   display: block;
   max-width: 100vw;
   padding: 0 9.788vw;
-  flex-wrap: wrap;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -63,7 +62,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 2100px) {
   .container-grid {
     height: 100%;
     grid-template-columns: repeat(3, 1fr);
