@@ -61,6 +61,8 @@ export default {
 .card > figcaption > p {
   color: white;
   padding: 0 30px;
+  font-size: 1rem;
+
 }
 
 .card:hover figcaption {
@@ -80,10 +82,12 @@ export default {
   text-decoration: none;
   color: black;
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1280px) {
   .card {
     width: 300px;
     height: 300px;
+
   }
 }
 </style>
