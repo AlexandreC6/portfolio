@@ -1,7 +1,6 @@
 <template>
 <div class="container">
   <div class="container-grid" id="top">
-    <!-- <p>{{store.projectJs[0].title}}</p> -->
     <span v-for="projectJs in storeProject" :key="projectJs.id">
       <base-project
         :title="projectJs.title"
@@ -40,21 +39,23 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  height: 100vh;
+  width: 90vw;
+}
 .container-grid {
-  height: 28vw;
-  display: block;
-  max-width: 100vw;
+  height: 100%;
+  width: 100%;
   padding: 0 9.788vw;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(auto, 1fr);
-  /* grid-template-rows: repeat(4, 1fr); */
   grid-column-gap: .5rem;
   grid-row-gap: .5rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .container-grid {
     height: 100%;
     display: flex;
