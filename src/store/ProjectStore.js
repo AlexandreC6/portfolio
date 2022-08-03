@@ -101,6 +101,14 @@ export const useProductStore = defineStore('ProductStore',{
           background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659535570/portfolio/projectJS/memory-card_ghtylg.png',
           description: "Le but est de pouvoir cliquer sur les cartes afin d'apercevoir l'icône qu'elles contiennent, puis de retrouver les paires.",
           github: 'https://github.com/AlexandreC6/memory-card-app'
+        },
+        {
+          id: 10,
+          title : 'Le Morpion',
+          link: 'https://morpion-app-js.netlify.app/',
+          background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659550315/portfolio/projectJS/Morpion-game_zkazp2.png',
+          description: "Le jeu du morpion consiste à aligner 3 croix(X) ou ronds(O) afin de gagner la partie, à vous de jouer !",
+          github: 'https://github.com/AlexandreC6/morpion-game'
         }
       ]
     }
