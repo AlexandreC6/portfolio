@@ -93,6 +93,14 @@ export const useProductStore = defineStore('ProductStore',{
           background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659449148/portfolio/projectJS/clone-unsplash.png',
           description: "Utiliser l'API de la banque d'images Unsplash afin d'intégrer un scroll infini + un système de recherche",
           github: 'https://github.com/AlexandreC6/Unsplash-scroll-Infini'
+        },
+        {
+          id: 9,
+          title: 'Memory Card Game',
+          link: 'https://memory-card-appjs.netlify.app/',
+          background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659535570/portfolio/projectJS/memory-card_ghtylg.png',
+          description: "Le but est de pouvoir cliquer sur les cartes afin d'apercevoir l'icône qu'elles contiennent, puis de retrouver les paires.",
+          github: 'https://github.com/AlexandreC6/memory-card-app'
         }
       ]
     }
