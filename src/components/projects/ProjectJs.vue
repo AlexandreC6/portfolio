@@ -70,12 +70,4 @@ export default {
     grid-template-rows: repeat(auto, 1fr);
   }
 }
-
-@media screen and (max-width: 1100px) {
-  .container-grid {
-    height: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-  }
-}
 </style>
