@@ -109,6 +109,22 @@ export const useProductStore = defineStore('ProductStore',{
           background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659550315/portfolio/projectJS/Morpion-game_zkazp2.png',
           description: "Le jeu du morpion consiste à aligner 3 croix(X) ou ronds(O) afin de gagner la partie, à vous de jouer !",
           github: 'https://github.com/AlexandreC6/morpion-game'
+        },
+        {
+          id: 11,
+          title: 'Particule JS',
+          link: 'https://particulejs-app.netlify.app/',
+          background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659623714/portfolio/projectJS/ParticuleJS_ivr6ux.png',
+          description: 'Ce projet va utiliser le monde des canvas en JavaScript. Le canvas, la toile, va vous permettre de créer des formes basiques en JS (ronds, rectangle, lignes, texte, etc...).',
+          github: 'https://github.com/AlexandreC6/particule-js'
+        },
+        {
+          id: 12,
+          title: 'Typing Game',
+          link: 'https://typing-js.netlify.app/',
+          background: 'https://res.cloudinary.com/dguwsqu9j/image/upload/v1659624021/portfolio/projectJS/Typing-game_s6v7ik.png',
+          description: 'Un jeu sympathique qui permet de mesurer sa vitesse de frappe sur une minute.',
+          github: 'https://github.com/AlexandreC6/Typing-test'
         }
       ]
     }
