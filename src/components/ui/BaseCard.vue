@@ -2,9 +2,11 @@
   <div class="container">
     <div class="my-description">
       <p>I’m Alexandre Camilo.
-      I’m a web developer with <spand class="blue-tech">Ruby on Rails</spand> and <span class="blue-tech">VueJs</span>.</p>
+      I’m a frontend developer with <spand class="blue-tech">Vue JS</spand> and <span class="blue-tech">Ruby on Rails</span>.</p>
       <br>
-      <p>i’m passionate about everything that has to do with digital design.</p>
+      <p>I enjoy building performant web apps and beautiful UI's with various technologies. </p>
+      <br>
+      <p> I love learning new technologies and always try improving my skills by doing new projects!</p>
     </div>
     <div class="picture">
       <img src="../../assets/profile-picture_removebg.png" alt="">
@@ -42,15 +44,16 @@ export default {
   grid-area: 1 / 1 / 2 / 2;
 
   p {
-    font-size: 2em;
+    font-size: 1.4em;
     font-family: 'Lato', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     line-height: 27px;
 
     .blue-tech {
       color: #0F4C81;
+      font-weight: 600;
     }
   }
 }

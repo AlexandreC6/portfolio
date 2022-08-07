@@ -8,7 +8,7 @@
         <div class="line2">Alexandre Camilo</div>
       </transition>
       <transition appear @before-enter="beforeEnter" @enter="FSenter">
-        <div class="line3">Fullstack developer</div>
+        <div class="line3">Frontend developer</div>
       </transition>
     </div>
     <base-arrow id="about-me">About me</base-arrow>
