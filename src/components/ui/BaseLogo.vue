@@ -128,7 +128,7 @@ export default {
   width: auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px and 750px) {
   .logo1,
   .logo2,
   .logo3,
