@@ -6,7 +6,7 @@
         :title="projectJs.title"
         :image="projectJs.background"
         :link="projectJs.link"
-        :description="projectJs.description"
+        :description="projectJs.descriptionEng"
         :github="projectJs.github"
       >
       </base-project>
@@ -46,7 +46,7 @@ export default {
 .container-grid {
   height: 100%;
   width: 100%;
-  padding: 0 9.788vw;
+  padding: 5vw 9.788vw;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);

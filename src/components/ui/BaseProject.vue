@@ -44,7 +44,8 @@ export default {
 
 .card > figcaption {
   grid-area: stack;
-  background-color: #0F4C81;
+  /* background-color: #0F4C81; */
+  background:  rgb(161, 161, 161);
   transform: translateY(calc(100% - 4rem));
   transition: transform .6s;
 }
@@ -55,6 +56,7 @@ export default {
   color: white;
   height: 4rem;
   opacity: 0.5;
+  padding-top: 1rem;
 
 }
 
