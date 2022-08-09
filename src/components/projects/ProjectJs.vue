@@ -6,7 +6,7 @@
         :title="projectJs.title"
         :image="projectJs.background"
         :link="projectJs.link"
-        :description="projectJs.description"
+        :description="projectJs.descriptionEng"
         :github="projectJs.github"
       >
       </base-project>

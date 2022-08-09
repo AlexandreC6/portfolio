@@ -1,13 +1,13 @@
 <template>
   <div class="all-arrow">
     <p><slot></slot></p>
-    <a class="link" href="#">
+    <div class="link">
       <span class="link__arrow">
         <span></span>
         <span></span>
       </span>
       <span class="link__line"></span>
-    </a>
+    </div>
   </div>
 </template>
 

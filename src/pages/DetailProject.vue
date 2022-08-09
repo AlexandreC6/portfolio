@@ -73,7 +73,7 @@ export default {
   },
   methods: {
     splitSentence(id){
-      const array = this.projects[id].description.split('.')
+      const array = this.projects[id].descriptionEng.split('.')
       this.arrayOfDescription.push(array);
       return this.arrayOfDescription
     }
