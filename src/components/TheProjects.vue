@@ -36,6 +36,7 @@ export default {
 
 <style scoped lang="scss">
 .my-projects {
+  padding-top: 5.556vw;
   height: 80vh;
   width: 100%;
   display: flex;
