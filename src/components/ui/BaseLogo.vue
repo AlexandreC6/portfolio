@@ -20,13 +20,14 @@
       <Icon icon="akar-icons:css-fill" color="black" class="icon-tech" />
     </div>
     <div class="logo7">
-      <Icon icon="cib:mysql" color="black" class="icon-tech sql" />
+      <Icon icon="cib:typescript" color="black" class="icon-tech" />
     </div>
     <div class="logo8">
       <Icon icon="bi:git" color="black" class="icon-tech" />
     </div>
     <div class="logo9">
-      <Icon icon="bxl:heroku" color="black" class="icon-tech" />
+      <Icon icon="cib:mysql" color="black" class="icon-tech sql" />
+
     </div>
     <div class="logo10">
       <Icon icon="akar-icons:bootstrap-fill" color="black" class="icon-tech" />
