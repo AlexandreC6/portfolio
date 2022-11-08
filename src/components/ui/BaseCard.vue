@@ -1,15 +1,22 @@
 <template>
   <div class="container">
     <div class="my-description">
-      <p>I’m Alexandre Camilo.
-      I’m a frontend developer with <spand class="blue-tech">Vue JS</spand> and <span class="blue-tech">Ruby on Rails</span>.</p>
-      <br>
-      <p>I enjoy building performant web apps and beautiful UI's with various technologies. </p>
-      <br>
-      <p> I love learning new technologies and always try improving my skills by doing new projects!</p>
+      <p>
+        I’m Alexandre Camilo. I’m a frontend developer with
+        <spand class="blue-tech">React.Js</spand> and
+        <span class="blue-tech">Vue.Js</span>.
+      </p>
+      <br />
+      <p>
+        I love building high-performance web applications and a great user interface with different technologies.
+      </p>
+      <br />
+      <p>
+        I love learning recent technologies and always improve my skills by doing new projets !
+      </p>
     </div>
     <div class="picture">
-      <img src="../../assets/profile-picture_removebg.png" alt="">
+      <img src="../../assets/profile-picture_removebg.png" alt="" />
     </div>
   </div>
 </template>
@@ -18,12 +25,11 @@
 export default {
   data() {
     return {
-      speech: ''
-    }
+      speech: "",
+    };
   },
-}
+};
 </script>
-
 
 <style scoped lang="scss">
 .container {
@@ -45,24 +51,24 @@ export default {
 
   p {
     font-size: 1.4em;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     line-height: 27px;
 
     .blue-tech {
-      color: #0F4C81;
+      color: #0f4c81;
       font-weight: 600;
     }
   }
 }
 .picture {
   grid-area: 1 / 2 / 2 / 3;
-    img {
-      // height: 185px;
-      height: 11.56rem;
-    }
+  img {
+    // height: 185px;
+    height: 11.56rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
