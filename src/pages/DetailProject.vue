@@ -3,6 +3,7 @@
     <div class="page-picture"  v-if="projectID !== 2">
       <camilo-breakfast v-if="projectID === 0"></camilo-breakfast>
       <find-a-coach v-if="projectID === 1"></find-a-coach>
+      <span class="manage-budget"><manage-budget v-if="projectID === 3"></manage-budget></span>
       <section class="scroll"><scroll-down></scroll-down></section>
     </div>
     <div class="page-details" :class="{'project-javascript': projectID === 2 }">
@@ -47,6 +48,7 @@ import { useProductStore } from "@/store/ProjectStore";
 import CamiloBreakfast from '../components/projects/CamiloBreakfast.vue';
 import FindACoach from '../components/projects/FindACoach.vue'
 import ProjectJs from '../components/projects/ProjectJs.vue'
+import ManageBudget from '../components/projects/ManageBudget.vue'
 
 export default {
   data(){
@@ -60,7 +62,8 @@ export default {
   components: {
     CamiloBreakfast,
     FindACoach,
-    ProjectJs
+    ProjectJs,
+    ManageBudget
   },
   computed: {
     splitDescription(){
@@ -76,11 +79,16 @@ export default {
       const array = this.projects[id].descriptionEng.split('.')
       this.arrayOfDescription.push(array);
       return this.arrayOfDescription
+    },
+    calcWindow(){
+      const width = window.innerWidth;
+      console.log(width)
     }
   },
   mounted () {
     // https://renatello.com/vue-js-scroll-top/
     window.scrollTo(0, 0)
+    this.calcWindow()
   }
 }
 </script>
@@ -99,6 +107,10 @@ export default {
     bottom: 1rem;
     left: 50%;
   }
+}
+
+.hidden {
+  display: none;
 }
 
 .page-details {
@@ -187,9 +199,9 @@ export default {
 }
 
 @media screen and (max-width: 600px) {
-  .page-picture {
-  height: 80vh;
-  }
+  // .page-picture {
+  // height: 80vh;
+  // }
 
   .container {
     height: 80%;
@@ -214,7 +226,11 @@ export default {
       font-size: 1.7rem;
     }
   }
+
+  .page-picture .manage-budget{
+    height: 0px;
+    width: 0px;
+    background: red;
+  }
 }
-
-
 </style>

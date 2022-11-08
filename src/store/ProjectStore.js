@@ -30,6 +30,15 @@ export const useProductStore = defineStore('ProductStore',{
           descriptionEng: "I challenged myself to consolidate my knowledge in Javascript. I chose to do a Javascript project every day for 20 days.  I update this page every day!",
           technologies: ['HTML', 'Javascript', 'CSS'],
           date: ' Juillet 2022'
+        },
+        {
+          id: 4,
+          title: 'Budgeting, React App',
+          descriptionEng: "Creating a simple CRUD app built around budgeting.",
+          technologies: ['React.js', 'React Boostrap', 'HTML', 'CSS'],
+          link: 'https://alexandrec6.github.io/react-budget-app/',
+          date: 'November 2022',
+          github: 'https://github.com/AlexandreC6/react-budget-app',
         }
       ],
       projectJs : [
