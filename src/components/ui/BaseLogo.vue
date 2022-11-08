@@ -2,25 +2,25 @@
 <div class="line-logo"></div>
   <div class="all-logo">
     <div class="logo1">
-      <Icon icon="akar-icons:vue-fill" color="black" class="icon-tech" />
+      <Icon icon="akar-icons:react-fill" color="black" class="icon-tech" />
     </div>
     <div class="logo2">
-      <Icon icon="cib:js" color="black" class="icon-tech" />
+      <Icon icon="akar-icons:vue-fill" color="black" class="icon-tech" />
     </div>
     <div class="logo3">
-      <Icon icon="cib:ruby" color="black" class="icon-tech" />
+      <Icon icon="cib:js" color="black" class="icon-tech" />
     </div>
     <div class="logo4">
-      <Icon icon="mdi:language-ruby-on-rails" color="black" class="icon-tech" />
+      <Icon icon="cib:typescript" color="black" class="icon-tech" />
     </div>
     <div class="logo5">
-      <Icon icon="akar-icons:html-fill" color="black" class="icon-tech" />
+      <Icon icon="mdi:language-ruby-on-rails" color="black" class="icon-tech" />
     </div>
     <div class="logo6">
-      <Icon icon="akar-icons:css-fill" color="black" class="icon-tech" />
+      <Icon icon="akar-icons:html-fill" color="black" class="icon-tech" />
     </div>
     <div class="logo7">
-      <Icon icon="cib:typescript" color="black" class="icon-tech" />
+      <Icon icon="akar-icons:css-fill" color="black" class="icon-tech" />
     </div>
     <div class="logo8">
       <Icon icon="bi:git" color="black" class="icon-tech" />
